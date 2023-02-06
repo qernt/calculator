@@ -22,10 +22,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_7,SIGNAL(clicked()),this,SLOT(digits_numbers()));
     connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(digits_numbers()));
     connect(ui->pushButton_9,SIGNAL(clicked()),this,SLOT(digits_numbers()));
-    connect(ui->pushButton_Plus,SIGNAL(clicked()),this,SLOT(check_math_operation_buttons()));
-    connect(ui->pushButton_Minus,SIGNAL(clicked()),this,SLOT(check_math_operation_buttons()));
-    connect(ui->pushButton_Devide,SIGNAL(clicked()),this,SLOT(check_math_operation_buttons()));
-    connect(ui->pushButton_x,SIGNAL(clicked()),this,SLOT(check_math_operation_buttons()));
+    connect(ui->pushButton_Plus,SIGNAL(clicked()),this,SLOT(math_operation_buttons()));
+    connect(ui->pushButton_Minus,SIGNAL(clicked()),this,SLOT(math_operation_buttons()));
+    connect(ui->pushButton_Devide,SIGNAL(clicked()),this,SLOT(math_operation_buttons()));
+    connect(ui->pushButton_x,SIGNAL(clicked()),this,SLOT(math_operation_buttons()));
 
     ui->pushButton_Plus->setCheckable(true);
     ui->pushButton_Minus->setCheckable(true);
@@ -89,7 +89,7 @@ void MainWindow::on_pushButton_Percent_clicked()
     ui->result->setText(new_lable);
 }
 
-void MainWindow::check_math_operation_buttons()
+void MainWindow::math_operation_buttons()
 {
     QPushButton *button = (QPushButton *)sender();
 

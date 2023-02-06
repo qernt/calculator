@@ -24,7 +24,7 @@ private slots:
     void on_pushButton_PlusMinus_clicked();
     void on_pushButton_AC_clicked();
     void on_pushButton_Percent_clicked();
-    void check_math_operation_buttons();
+    void math_operation_buttons();
     void on_pushButton_Equal_clicked();
 };
 
